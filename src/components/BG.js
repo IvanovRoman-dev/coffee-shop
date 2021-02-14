@@ -5,6 +5,7 @@ export default function BG() {
     return (
         <div className="body__bg" tabIndex="-1">
             <img src={smokeImg} alt="smoke"/>
+            <div></div>
         </div>
     )
 }
