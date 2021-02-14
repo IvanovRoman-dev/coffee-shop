@@ -1,0 +1,55 @@
+@import './_colors';
+@import './_fonts.scss';
+@import './smart-grid.scss';
+@include reset();
+
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.container{
+    @include wrapper();
+}
+
+.container-fluid{
+    @include wrapper-full();
+}
+
+.row{
+    @include row-flex();
+}
+
+a{
+    text-decoration: none;
+}
+
+.social{
+    display: flex;
+    &__link + .social__link{
+        margin-left: 27px;
+    }
+    &__link{
+        transition: .4s ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+        }
+        &--insta{
+            width: 86px;
+            height: 79px;
+        }
+        &--facebook{
+            width: 59px;
+            height: 79px;    
+        }
+        &--twitter{
+            width: 73px;
+            height: 79px;
+        }
+    }
+}
+
+@import './Header.scss';
+@import './BG.scss';
+@import './Footer.scss';

@@ -1,0 +1,17 @@
+.body__bg{
+    background: linear-gradient(to bottom, $light-green 0%, $dark-green 100%);
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    overflow: hidden;
+    z-index: -1;
+    img{
+        position: absolute;
+        bottom: -100px;
+        left: 50%;
+        transform: translateX(-50%) scale(1.4);
+        mix-blend-mode: screen;
+
+    }
+}
